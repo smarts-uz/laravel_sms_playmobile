@@ -1,0 +1,29 @@
+{
+    "name": "tramprodev/playmobile-sms",
+    "description": "Playmobile SMS service to Laravel project",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PlayMobile\\SMS\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AzizbekDev",
+            "email": "azizbek_muzaffarov@mail.ru"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PlayMobile\\SMS\\SmsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+    
+}
