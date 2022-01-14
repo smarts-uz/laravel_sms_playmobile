@@ -22,6 +22,9 @@ class SmsServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/config/config.php' => config_path('playmobile.php')
             ], 'playmobile-config');
+            $this->publishes([
+                __DIR__.'/Http/Controllers/PlaymobileSMSController.php' => app_path('Http/Controllers/PlaymobileSMSController.php'),
+            ], 'playmobile');
         }
     }
 
